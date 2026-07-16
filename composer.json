@@ -1,0 +1,33 @@
+{
+  "name": "evolutioncms/espocrmevo",
+  "description": "Интеграция EspoCRM для Evolution CMS",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.2",
+    "ext-json": "*",
+    "ext-openssl": "*",
+    "ext-pdo": "*",
+    "league/oauth2-server": "^9.4",
+    "laminas/laminas-diactoros": "^3.8",
+    "lcobucci/jwt": "^5.6",
+    "defuse/php-encryption": "^2.4",
+    "illuminate/support": "^8.0"
+  },
+  "suggest": {
+    "ext-sodium": "Рекомендуется для улучшенной безопасности JWT"
+  },
+  "autoload": {
+    "psr-4": {
+      "EvolutionCMS\\Espocrmevo\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "EvolutionCMS\\Espocrmevo\\EspocrmevoServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable"
+}
