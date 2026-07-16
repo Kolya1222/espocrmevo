@@ -30,31 +30,42 @@
    ```
 4. Сгенерируйте RSA‑ключи (в core/storage/keys):
    ```bash
-   openssl genrsa -out core/storage/keys/private.key 2048
-   openssl rsa -in core/storage/keys/private.key -pubout -out core/storage/keys/public.key
+   openssl genrsa -out storage/keys/private.key 2048
+   openssl rsa -in storage/keys/private.key -pubout -out storage/keys/public.key
    ```
 5. Сгенерируйте ключ шифрования
     Выполните в терминале:
     ```bash
     php -r "echo 'def00000' . bin2hex(random_bytes(32));"
     ```
-6. Установить EspoCRM
+
+6. Полученный ключ занести в файл .env именем encryptionKey
+
+7. Установить EspoCRM
     Перейдите в модуль и выполните установку. Потребуется дополнительная БД.
 
 
 ## Настройка
 
 ### Клиент OIDC (EspoCRM)
-Добавьте запись в таблицу `oidc_clients` (через БД или сидер):
 
-| Поле | Значение |
-|------|----------|
-| `client_id` | `espocrm` |
-| `client_secret` | (оставьте пустым или задайте) |
-| `redirect_uri` | `https://your.domain/manager/media/espoCRM/oauth-callback.php` |
-| `grant_types` | `authorization_code` |
-| `scope` | `openid profile email phone` |
-| `is_active` | `1` |
+Добавьте запись в таблицу `oidc_clients` (через БД или сидер). Обязательно сгенерируйте случайный `client_secret`:
+
+```bash
+php -r "echo bin2hex(random_bytes(32));"
+```
+
+Скопируйте полученную строку (64 символа) и вставьте в поле `client_secret`.
+
+| Поле            | Значение                                                       |
+|-----------------|----------------------------------------------------------------|
+| `client_id`     | `espocrm`                                                      |
+| `client_secret` | **сгенерированная строка** (например, `a1b2...`)              |
+| `redirect_uri`  | `https://your.domain/manager/media/espoCRM/oauth-callback.php` |
+| `grant_types`   | `authorization_code refresh_token` (если нужен refresh)        |
+| `scope`         | `openid profile email phone`                                   |
+| `is_active`     | `1`                                                            |
+
 
 ### Конфигурация EspoCRM
 В административной панели EspoCRM:  
