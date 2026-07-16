@@ -1,5 +1,5 @@
 {
-  "name": "evolutioncms/espocrmevo",
+  "name": "roilafx/espocrmevo",
   "description": "Интеграция EspoCRM для Evolution CMS",
   "type": "library",
   "license": "MIT",
@@ -19,13 +19,13 @@
   },
   "autoload": {
     "psr-4": {
-      "EvolutionCMS\\Espocrmevo\\": "src"
+      "roilafx\\Espocrmevo\\": "src"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "EvolutionCMS\\Espocrmevo\\EspocrmevoServiceProvider"
+        "roilafx\\Espocrmevo\\EspocrmevoServiceProvider"
       ]
     }
   },
