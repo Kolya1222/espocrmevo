@@ -19,7 +19,7 @@ class EspocrmevoServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__ . '/../migrations');
         $this->loadViewsFrom(__DIR__ . '/../views', 'espocrmevo');
         $this->publishes([
-            __DIR__ . '/../publishable/'  => MODX_BASE_PATH . 'manager/media/',
+            __DIR__ . '/../publishable/'  => MODX_BASE_PATH,
         ]);
         $this->app->registerRoutingModule(
             'Интеграция с CRM',
