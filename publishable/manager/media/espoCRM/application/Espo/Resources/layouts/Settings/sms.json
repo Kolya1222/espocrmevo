@@ -1,8 +1,0 @@
-[
-    {
-        "rows": [
-            [{"name": "smsProvider"}, false],
-            [{"name": "outboundSmsFromNumber"}, false]
-        ]
-    }
-]

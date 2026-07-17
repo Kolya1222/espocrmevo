@@ -1,4 +1,0 @@
-{
-    "assignmentNotificatorClassName": "Espo\\Classes\\AssignmentNotificators\\Email",
-    "forceAssignmentNotificator": true
-}

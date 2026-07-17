@@ -1,7 +1,0 @@
-{
-    "fields": {
-        "auth2FATotpSecret": {
-            "forbidden": true
-        }
-    }
-}

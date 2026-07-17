@@ -1,8 +1,0 @@
-{
-  "options": {
-    "job": {
-      "ProcessMassEmail": "大量のメールを送信する",
-      "ControlKnowledgeBaseArticleStatus": "ナレッジベース記事のステータスを制御する"
-    }
-  }
-}

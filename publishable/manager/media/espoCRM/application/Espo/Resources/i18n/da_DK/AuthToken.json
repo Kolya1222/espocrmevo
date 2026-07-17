@@ -1,8 +1,0 @@
-{
-  "fields": {
-    "user": "Bruger",
-    "ipAddress": "IP-adresse",
-    "lastAccess": "Sidste adgangsdato.",
-    "createdAt": "Logindato"
-  }
-}

@@ -1,8 +1,0 @@
-{
-    "primaryFilterClassNameMap": {
-        "published": "Espo\\Modules\\Crm\\Classes\\Select\\KnowledgeBaseArticle\\PrimaryFilters\\Published"
-    },
-    "accessControlFilterClassNameMap": {
-        "mandatory": "Espo\\Modules\\Crm\\Classes\\Select\\KnowledgeBaseArticle\\AccessControlFilters\\Mandatory"
-    }
-}

@@ -1,5 +1,0 @@
-[
-    {"name":"name", "link": true},
-    {"name":"userName", "width": 32},
-    {"name":"teamRole", "notSortable": true, "width": 25}
-]

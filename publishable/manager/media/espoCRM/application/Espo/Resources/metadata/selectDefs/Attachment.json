@@ -1,5 +1,0 @@
-{
-    "primaryFilterClassNameMap": {
-        "orphan": "Espo\\Classes\\Select\\Attachment\\PrimaryFilters\\Orphan"
-    }
-}

@@ -1,7 +1,0 @@
-{
-    "fields": {
-        "team": "Team",
-        "futureDays": "Next X Days",
-        "useLastStage": "Group by last reached stage"
-    }
-}

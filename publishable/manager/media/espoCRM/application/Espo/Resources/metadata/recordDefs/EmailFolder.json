@@ -1,5 +1,0 @@
-{
-    "beforeCreateHookClassNameList": [
-        "Espo\\Classes\\RecordHooks\\EmailFolder\\BeforeCreate"
-    ]
-}

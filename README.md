@@ -42,34 +42,35 @@
 6. Полученный ключ занести в файл .env именем encryptionKey
 
 7. Установить EspoCRM
-    Перейдите в модуль и выполните установку. Потребуется дополнительная БД.
+   Перейдите в модуль и выполните установку. Потребуется дополнительная БД. 
+   Я брал за основу вот этот релиз и на нем все тестировал [GitHub](https://github.com/espocrm/espocrm/releases/tag/10.0.2)
 
 
 ## Настройка
 
-### Клиент OIDC (EspoCRM)
+### Создание OIDC‑клиента
+Пакет предоставляет консольную команду для создания клиента:
 
-Добавьте запись в таблицу `oidc_clients` (через БД или сидер). Обязательно сгенерируйте случайный `client_secret`:
+   ```bash
+   php artisan espocrmevo:create-client --id=espocrm --redirect="https://your.domain/manager/media/espoCRM/oauth-callback.php" --name="EspoCRM"
+   ```
+Если не указать --secret, будет сгенерирован случайный ключ длиной 64 символа.
+redirect можно скопировать из Админиистративной панели EcpoCRM Администрирование -> Аутентификация -> OIDC
+Запись появится в таблице oidc_clients.
 
-```bash
-php -r "echo bin2hex(random_bytes(32));"
-```
-
-Скопируйте полученную строку (64 символа) и вставьте в поле `client_secret`.
-
-| Поле            | Значение                                                       |
-|-----------------|----------------------------------------------------------------|
-| `client_id`     | `espocrm`                                                      |
-| `client_secret` | **сгенерированная строка** (например, `a1b2...`)              |
-| `redirect_uri`  | `https://your.domain/manager/media/espoCRM/oauth-callback.php` |
-| `grant_types`   | `authorization_code refresh_token` (если нужен refresh)        |
-| `scope`         | `openid profile email phone`                                   |
-| `is_active`     | `1`                                                            |
+### Переменные окружения (.env)
+|------------|------------|--------------|
+| Переменная |	Назначение | По умолчанию |
+|------------|------------|--------------|
+| OIDC_ISSUER | Издатель токенов (iss) | route.local |
+| OIDC_AUDIENCE | Получатель токенов (aud) | espocrm |
+| OIDC_KEY_ID | Идентификатор ключа (kid) в JWKS | 1 |
+|encryptionKey | Ключ шифрования OAuth‑кодов (обязателен) | — |
 
 
 ### Конфигурация EspoCRM
 В административной панели EspoCRM:  
-**Администрирование → Аутентификация → OIDC**
+**Администрирование -> Аутентификация -> OIDC**
 
 - Клиент ID: `espocrm`
 - Секрет клиента: если задавали
@@ -79,13 +80,14 @@ php -r "echo bin2hex(random_bytes(32));"
 - JWKS Endpoint: `https://your.domain/oidc/jwks`
 - Scopes: `openid profile email phone`
 - Username Claim: `username` (рекомендуется)
-- Создать пользователя: ✓
-- Включить PKCE: ✓
+- Создать пользователя: +
+- Включить PKCE: +
 
 ## Структура пакета
 ```
 core/custom/packages/espocrmevo/
 ├── src/
+│   ├── Commands/              # CreateClient
 │   ├── Controllers/           # OIDCController, CrmController
 │   ├── Entities/              # Сущности токенов, кодов
 │   ├── Grants/                # NonceAuthCodeGrant

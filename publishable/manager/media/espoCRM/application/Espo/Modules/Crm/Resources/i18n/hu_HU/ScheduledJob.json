@@ -1,8 +1,0 @@
-{
-  "options": {
-    "job": {
-      "ProcessMassEmail": "Küldjön e-maileket",
-      "ControlKnowledgeBaseArticleStatus": "A Tudásbázis-cikk állapota"
-    }
-  }
-}

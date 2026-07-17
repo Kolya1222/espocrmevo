@@ -1,7 +1,0 @@
-{
-    "aclDependencies": {
-        "Meeting": {
-            "anyScopeList": ["Call"]
-        }
-    }
-}

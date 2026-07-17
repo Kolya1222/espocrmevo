@@ -1,8 +1,0 @@
-{
-  "options": {
-    "job": {
-      "ProcessMassEmail": " إرسال رسائل البريد الإلكتروني المتعددة",
-      "ControlKnowledgeBaseArticleStatus": "التحكّم في حالة مقالات القاعدة المعرفية"
-    }
-  }
-}

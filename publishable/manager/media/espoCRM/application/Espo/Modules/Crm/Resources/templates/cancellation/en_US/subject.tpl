@@ -1,1 +1,0 @@
-Cancellation of {{entityTypeLowerFirst}} '{{name}}'

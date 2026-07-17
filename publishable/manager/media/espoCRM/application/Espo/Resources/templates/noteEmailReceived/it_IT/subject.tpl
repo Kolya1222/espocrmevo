@@ -1,1 +1,0 @@
-Email ricevuta: [{{entityType}}] {{name}}

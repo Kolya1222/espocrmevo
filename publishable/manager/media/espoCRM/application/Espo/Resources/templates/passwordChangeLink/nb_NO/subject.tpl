@@ -1,1 +1,0 @@
-Spør om å få bytte passord

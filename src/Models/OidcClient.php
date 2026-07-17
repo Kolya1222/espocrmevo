@@ -1,6 +1,6 @@
 <?php
 
-namespace EvolutionCMS\Espocrmevo\Models;
+namespace roilafx\Espocrmevo\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

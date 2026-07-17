@@ -1,5 +1,0 @@
-{
-    "primaryFilterClassNameMap": {
-        "actual": "Espo\\Classes\\Select\\EmailTemplate\\PrimaryFilters\\Actual"
-    }
-}

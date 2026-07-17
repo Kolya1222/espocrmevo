@@ -1,6 +1,0 @@
-[
-    {"name":"name", "link": true},
-    {"name":"userName", "width": 22},
-    {"name":"emailAddress", "width": 22},
-    {"name":"isActive", "width": 10}
-]

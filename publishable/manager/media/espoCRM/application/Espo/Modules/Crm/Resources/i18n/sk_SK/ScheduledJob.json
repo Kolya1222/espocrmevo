@@ -1,8 +1,0 @@
-{
-  "options": {
-    "job": {
-      "ProcessMassEmail": "Odoslať hromadné emaily",
-      "ControlKnowledgeBaseArticleStatus": "Riadenie stavu článku databázy znalostí"
-    }
-  }
-}

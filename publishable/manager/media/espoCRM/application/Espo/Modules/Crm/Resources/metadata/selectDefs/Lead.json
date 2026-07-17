@@ -1,7 +1,0 @@
-{
-    "primaryFilterClassNameMap": {
-        "actual": "Espo\\Modules\\Crm\\Classes\\Select\\Lead\\PrimaryFilters\\Actual",
-        "active": "Espo\\Modules\\Crm\\Classes\\Select\\Lead\\PrimaryFilters\\Actual",
-        "converted": "Espo\\Modules\\Crm\\Classes\\Select\\Lead\\PrimaryFilters\\Converted"
-    }
-}

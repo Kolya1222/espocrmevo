@@ -1,1 +1,0 @@
-Požiadavka na zmenu hesla

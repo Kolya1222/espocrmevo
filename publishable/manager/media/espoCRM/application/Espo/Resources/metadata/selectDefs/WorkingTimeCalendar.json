@@ -1,3 +1,0 @@
-{
-    "accessControlFilterResolverClassName": "Espo\\Core\\Select\\AccessControl\\FilterResolvers\\Boolean"
-}

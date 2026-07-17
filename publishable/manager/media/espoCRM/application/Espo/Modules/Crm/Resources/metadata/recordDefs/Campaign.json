@@ -1,5 +1,0 @@
-{
-    "beforeUpdateHookClassNameList": [
-        "Espo\\Modules\\Crm\\Classes\\RecordHooks\\Campaign\\BeforeUpdate"
-    ]
-}

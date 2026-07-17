@@ -1,9 +1,0 @@
-{
-    "selectAttributesDependencyMap": {
-        "name": [
-            "emailAddress",
-            "useSmtp",
-            "status"
-        ]
-    }
-}

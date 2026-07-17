@@ -1,6 +1,0 @@
-{
-    "implementationClassNameMap": {
-        "EspoUploadDir": "Espo\\Core\\FileStorage\\Storages\\EspoUploadDir",
-        "AwsS3": "Espo\\Core\\FileStorage\\Storages\\AwsS3"
-    }
-}

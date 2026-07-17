@@ -1,7 +1,0 @@
-{
-    "fields": {
-        "order": {
-            "readOnly": true
-        }
-    }
-}

@@ -1,8 +1,0 @@
-{
-  "fields": {
-    "method": "Метод"
-  },
-  "labels": {
-    "Create AuthenticationProvider": "Створити провайдера"
-  }
-}

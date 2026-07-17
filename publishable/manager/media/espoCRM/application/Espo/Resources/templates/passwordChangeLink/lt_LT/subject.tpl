@@ -1,1 +1,0 @@
-Slaptažodžio keitimo prašymas

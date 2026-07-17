@@ -1,8 +1,0 @@
-{
-    "followingUsersField": "users",
-    "subscribersCleanup": {
-        "enabled": true,
-        "dateField": "dateStart",
-        "statusList": ["Held", "Not Held"]
-    }
-}

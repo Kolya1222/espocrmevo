@@ -1,8 +1,0 @@
-{
-  "options": {
-    "job": {
-      "ProcessMassEmail": "Pošiljajte množična e-poštna sporočila",
-      "ControlKnowledgeBaseArticleStatus": "Nadzor statusa članka v zbirki znanja"
-    }
-  }
-}

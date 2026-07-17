@@ -1,8 +1,0 @@
-{
-  "options": {
-    "job": {
-      "ProcessMassEmail": "ส่งอีเมลจำนวนมาก",
-      "ControlKnowledgeBaseArticleStatus": "ควบคุมสถานะบทความฐานความรู้"
-    }
-  }
-}

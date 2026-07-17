@@ -1,5 +1,0 @@
-{
-    "primaryFilterClassNameMap": {
-        "orphan": "Espo\\Classes\\Select\\PhoneNumber\\PrimaryFilters\\Orphan"
-    }
-}

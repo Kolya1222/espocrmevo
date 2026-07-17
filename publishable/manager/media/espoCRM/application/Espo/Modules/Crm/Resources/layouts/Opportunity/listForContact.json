@@ -1,6 +1,0 @@
-[
-    {"name":"name", "link": true},
-    {"name":"stage", "width": 22},
-    {"name":"contactRole", "width": 22, "notSortable": true},
-    {"name":"amount", "align": "right", "width": 20}
-]

@@ -1,6 +1,0 @@
-{
-    "accessControlFilterClassNameMap": {
-        "onlyOwn": "Espo\\Modules\\Crm\\Classes\\Select\\CampaignTrackingUrl\\AccessControlFilters\\OnlyOwn",
-        "onlyTeam": "Espo\\Modules\\Crm\\Classes\\Select\\CampaignTrackingUrl\\AccessControlFilters\\OnlyTeam"
-    }
-}

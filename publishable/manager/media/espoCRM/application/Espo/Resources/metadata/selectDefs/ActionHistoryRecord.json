@@ -1,8 +1,0 @@
-{
-    "accessControlFilterClassNameMap": {
-        "onlyOwn": "Espo\\Classes\\Select\\ActionHistoryRecord\\AccessControlFilters\\OnlyOwn"
-    },
-    "boolFilterClassNameMap": {
-        "onlyMy": "Espo\\Classes\\Select\\ActionHistoryRecord\\BoolFilters\\OnlyMy"
-    }
-}

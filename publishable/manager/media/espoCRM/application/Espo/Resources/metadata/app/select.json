@@ -1,6 +1,0 @@
-{
-    "whereItemConverterClassNameMap": {
-        "inCategory": "Espo\\Core\\Select\\Where\\ItemConverters\\InCategory",
-        "isUserFromTeams": "Espo\\Core\\Select\\Where\\ItemConverters\\IsUserFromTeams"
-    }
-}

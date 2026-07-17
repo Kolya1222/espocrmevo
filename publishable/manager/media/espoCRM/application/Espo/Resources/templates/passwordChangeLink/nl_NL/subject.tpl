@@ -1,1 +1,0 @@
-Verzoek tot Wachtwoord verandering

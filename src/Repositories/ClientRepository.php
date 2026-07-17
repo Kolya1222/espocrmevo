@@ -12,9 +12,8 @@ class ClientRepository implements ClientRepositoryInterface
     public function getClientEntity(string $clientIdentifier): ?ClientEntityInterface
     {
         $client = OidcClient::where('client_id', $clientIdentifier)
-                            ->where('is_active', 1)
-                            ->first();
-
+            ->where('is_active', 1)
+            ->first();
         if (!$client) {
             return null;
         }
@@ -31,9 +30,9 @@ class ClientRepository implements ClientRepositoryInterface
     public function validateClient(string $clientIdentifier, ?string $clientSecret, ?string $grantType): bool
     {
         $client = OidcClient::where('client_id', $clientIdentifier)
-                            ->where('is_active', 1)
-                            ->first();
-
+            ->where('is_active', 1)
+            ->first();
+            
         if (!$client) {
             return false;
         }

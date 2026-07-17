@@ -1,5 +1,0 @@
-{
-    "primaryFilterClassNameMap": {
-        "active": "Espo\\Modules\\Crm\\Classes\\Select\\Campaign\\PrimaryFilters\\Active"
-    }
-}

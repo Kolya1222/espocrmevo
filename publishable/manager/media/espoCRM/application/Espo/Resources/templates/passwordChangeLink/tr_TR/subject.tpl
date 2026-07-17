@@ -1,1 +1,0 @@
-Parola Talebini Değiştir

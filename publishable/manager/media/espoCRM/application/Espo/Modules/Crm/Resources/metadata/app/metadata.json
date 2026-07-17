@@ -1,7 +1,0 @@
-{
-    "aclDependencies": {},
-    "frontendHiddenPathList": [
-        "__APPEND__",
-        ["app", "calendar", "additionalAttributeList"]
-    ]
-}
