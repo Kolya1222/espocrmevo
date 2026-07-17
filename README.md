@@ -43,7 +43,8 @@
 
 7. Установить EspoCRM
    Перейдите в модуль и выполните установку. Потребуется дополнительная БД. 
-   Я брал за основу вот этот релиз и на нем все тестировал [GitHub](https://github.com/espocrm/espocrm/releases/tag/10.0.2)
+   Я брал за основу вот этот релиз и на нем все тестировал [GitHub](https://github.com/espocrm/espocrm/releases/tag/10.0.2).
+   Просто разархивировал его в /manager/media/espoCRM. Чтобы в espoCRM был его index.php
 
 
 ## Настройка
